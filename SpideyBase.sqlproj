@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SpideyBase</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{3c090fdf-9873-44d2-a2ef-1d0136b20b09}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SpideyBase</RootNamespace>
+    <AssemblyName>SpideyBase</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <DefaultSchema>Spidey</DefaultSchema>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Spidey" />
+    <Folder Include="Spidey\Stored Procedures" />
+    <Folder Include="Spidey\Tables" />
+    <Folder Include="Spidey\Post Deployment" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Spidey\Tables\Addresses.sql" />
+    <Build Include="Spidey\Tables\Areas.sql" />
+    <Build Include="Spidey\Tables\BusinessCustomer.sql" />
+    <Build Include="Spidey\Tables\Businesses.sql" />
+    <Build Include="Spidey\Tables\Cities.sql" />
+    <Build Include="Spidey\Tables\Countries.sql" />
+    <Build Include="Spidey\Tables\Customers.sql" />
+    <Build Include="Spidey\Tables\Regions.sql" />
+    <Build Include="Spidey\Tables\PhoneNumbers.sql" />
+    <Build Include="Spidey\Tables\Orders.sql" />
+    <Build Include="Spidey\Tables\Recipients.sql" />
+    <Build Include="Spidey\Spidey.sql" />
+    <Build Include="Spidey\Tables\Notes.sql" />
+    <Build Include="Spidey\Tables\Languages.sql" />
+    <Build Include="Spidey\Tables\RecipientAddress.sql" />
+    <Build Include="Spidey\Tables\CustomerAddress.sql" />
+    <Build Include="Spidey\Tables\CustomerPhoneNumber.sql" />
+    <Build Include="Spidey\Tables\BusinessPhoneNumber.sql" />
+    <Build Include="Spidey\Stored Procedures\GetCustomers.sql" />
+    <Build Include="Spidey\Stored Procedures\GetBusinesses.sql" />
+    <Build Include="Spidey\Tables\BusinessAddress.sql" />
+    <Build Include="Spidey\Tables\BusinessOrder.sql" />
+    <Build Include="Spidey\Tables\CustomerOrder.sql" />
+    <Build Include="Spidey\Stored Procedures\GetCustomerOrdersByCustomerId.sql" />
+    <Build Include="Spidey\Stored Procedures\GetBusinessOrdersByBusinessId.sql" />
+    <Build Include="Spidey\Stored Procedures\GetOrderDetailsByOrderId.sql" />
+    <Build Include="Spidey\Stored Procedures\GetCities.sql" />
+    <Build Include="Spidey\Stored Procedures\GetRegionsByCountryId.sql" />
+    <Build Include="Spidey\Stored Procedures\GetLanguages.sql" />
+    <Build Include="Spidey\Stored Procedures\GetCountries.sql" />
+    <Build Include="Spidey\Stored Procedures\GetBusinessContacstByBusinessId.sql" />
+    <Build Include="Spidey\Stored Procedures\GetCustomerDetailsByCustomerId.sql" />
+    <Build Include="Spidey\Stored Procedures\SaveCustomer.sql" />
+    <Build Include="Spidey\Stored Procedures\SaveBusiness.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SpideyBase.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>Spidey</DatabaseVariableLiteralValue>
+    </ArtifactReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Spidey\Post Deployment\Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SpideyBase.publish.xml" />
+  </ItemGroup>
+</Project>

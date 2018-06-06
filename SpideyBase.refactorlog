@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="fb0dbc0f-5874-4931-89de-9db1c3fbfc6b" ChangeDateTime="06/03/2018 19:34:08">
+    <Property Name="ElementName" Value="[dbo].[Customers].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Customers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="customer_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0f4266ae-937c-4f6f-970a-845c55fe8efe" ChangeDateTime="06/03/2018 19:34:19">
+    <Property Name="ElementName" Value="[dbo].[Businesses].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Businesses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="business_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d33c9d6d-3747-4eac-9ea3-fa4496341239" ChangeDateTime="06/03/2018 19:39:48">
+    <Property Name="ElementName" Value="[dbo].[BusinessContact].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BusinessContact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="business_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="630f3dd8-9bb3-4afd-9d02-2668f752a6c9" ChangeDateTime="06/03/2018 19:42:20">
+    <Property Name="ElementName" Value="[dbo].[City].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[City]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="city_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cd9f7936-9d85-444c-9f20-3c7dad5b2f46" ChangeDateTime="06/03/2018 19:44:49">
+    <Property Name="ElementName" Value="[dbo].[FK_BusinessContact_Customer]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[BusinessContact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_BusinessContact_Customers]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="eadd35d1-175d-405c-a21b-ae8b40620855" ChangeDateTime="06/03/2018 19:46:07">
+    <Property Name="ElementName" Value="[dbo].[Area].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Area]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="area_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ae126761-f4ff-44e5-8d2f-6e9010872241" ChangeDateTime="06/03/2018 19:51:24">
+    <Property Name="ElementName" Value="[dbo].[City].[area_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[City]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="region_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="443bb54a-4342-472f-a4eb-84171713d265" ChangeDateTime="06/03/2018 19:52:44">
+    <Property Name="ElementName" Value="[dbo].[Table1].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="region_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6dc5b64d-81f3-4190-bb77-dac575f95424" ChangeDateTime="06/03/2018 20:00:05">
+    <Property Name="ElementName" Value="[dbo].[Addresses].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Addresses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="address_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ebfbc8c1-776d-41ad-9215-b2a8305fb4a3" ChangeDateTime="06/03/2018 20:00:38">
+    <Property Name="ElementName" Value="[dbo].[Addresses].[city]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Addresses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="city_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f9b5e84f-a770-489e-a6a6-0b35254fd312" ChangeDateTime="06/03/2018 20:02:00">
+    <Property Name="ElementName" Value="[dbo].[Addresses].[address]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Addresses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="street_address" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12a24a55-18a7-4a94-9c6d-d4b52ca174be" ChangeDateTime="06/03/2018 20:04:26">
+    <Property Name="ElementName" Value="[dbo].[Countries].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Countries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="country_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="39e92bcb-bd61-4ec7-a007-353920bda4c7" ChangeDateTime="06/03/2018 20:06:56">
+    <Property Name="ElementName" Value="[dbo].[Table1]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="Regions" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d8004666-5f0a-4741-a879-4f9ca6d54e49" ChangeDateTime="06/03/2018 20:28:25">
+    <Property Name="ElementName" Value="[Spidey].[Orders].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[Orders]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="order_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fc93e5d0-a4db-41c8-82e7-fa1c9816c213" ChangeDateTime="06/03/2018 20:32:38">
+    <Property Name="ElementName" Value="[Spidey].[Recipients].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[Recipients]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="recipient_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7ae6731f-5da8-4a3f-9e6d-5f31d149407a" ChangeDateTime="06/03/2018 20:50:16">
+    <Property Name="ElementName" Value="[dbo].[PhoneNumbers].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PhoneNumbers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="phone_id" />
+  </Operation>
+  <Operation Name="Move Schema" Key="cd8fd3de-a8e3-4e25-98fa-e356f8eb177c" ChangeDateTime="06/03/2018 20:51:05">
+    <Property Name="ElementName" Value="[dbo].[Addresses]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="29ecf771-2a57-409a-aaf9-07b86d1968f4" ChangeDateTime="06/03/2018 20:51:26">
+    <Property Name="ElementName" Value="[dbo].[Areas]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e4abaada-2b5b-4edb-9e91-df2924e55496" ChangeDateTime="06/03/2018 20:51:47">
+    <Property Name="ElementName" Value="[dbo].[Businesses]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c43db2cb-9b6f-4a24-a74c-27d5d28315b5" ChangeDateTime="06/03/2018 20:52:11">
+    <Property Name="ElementName" Value="[dbo].[Cities]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="291a6d06-e694-4b13-9d26-9f85fc1ddd89" ChangeDateTime="06/03/2018 20:52:52">
+    <Property Name="ElementName" Value="[dbo].[Countries]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="2211b6d4-c7ad-4bd6-a250-30447b746df8" ChangeDateTime="06/03/2018 20:53:16">
+    <Property Name="ElementName" Value="[dbo].[Customers]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="f40ff23c-1289-4b3b-880d-45537bc86812" ChangeDateTime="06/03/2018 20:53:39">
+    <Property Name="ElementName" Value="[dbo].[PhoneNumbers]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="85f6e8df-d027-463c-8013-82df175d7d76" ChangeDateTime="06/03/2018 20:54:31">
+    <Property Name="ElementName" Value="[Spidey].[Notes].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[Notes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="note_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="99cf21dd-4823-42c4-a6d1-48ab08087494" ChangeDateTime="06/03/2018 20:57:27">
+    <Property Name="ElementName" Value="[Spidey].[Languages].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[Languages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="language_id" />
+  </Operation>
+  <Operation Name="Move Schema" Key="3a8d98dc-03d7-4a56-9bef-b643c4dc9833" ChangeDateTime="06/03/2018 21:06:00">
+    <Property Name="ElementName" Value="[dbo].[Languages]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b3d1d8a4-aa72-4807-87bb-7e0cc36516d4" ChangeDateTime="06/03/2018 22:34:43">
+    <Property Name="ElementName" Value="[Spidey].[RecipientAddress].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[RecipientAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="recipient_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c03ddd81-c958-495f-957e-00b10d424e2a" ChangeDateTime="06/03/2018 22:36:46">
+    <Property Name="ElementName" Value="[Spidey].[CustomerAddress].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[CustomerAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="customer_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="45dce1c5-164b-4055-85ec-eeabd7097b35" ChangeDateTime="06/03/2018 22:38:01">
+    <Property Name="ElementName" Value="[Spidey].[BusinessContact]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[Spidey]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[BusinessCustomer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="60164289-c1ad-40e0-a198-c1529f5f8be3" ChangeDateTime="06/03/2018 22:40:22">
+    <Property Name="ElementName" Value="[Spidey].[CustomerPhoneNumber].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[CustomerPhoneNumber]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="customer_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="11f5574d-2e10-41dd-8f02-c88f77f3420c" ChangeDateTime="06/03/2018 22:42:49">
+    <Property Name="ElementName" Value="[Spidey].[BusinessPhoneNumber].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[BusinessPhoneNumber]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="business_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cf8f9faf-deda-4771-868b-a1436a9657aa" ChangeDateTime="06/03/2018 22:54:49">
+    <Property Name="ElementName" Value="[Spidey].[Customers].[customer_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[Customers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[customer_id]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8e7307a5-e9bb-464c-aac2-e7194eae3376" ChangeDateTime="06/03/2018 23:05:18">
+    <Property Name="ElementName" Value="[Spidey].[BusinessAddress].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[BusinessAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="business_idd" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e54ba572-92f8-4d2e-a986-b2c09a42327f" ChangeDateTime="06/03/2018 23:05:29">
+    <Property Name="ElementName" Value="[Spidey].[BusinessAddress].[business_idd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[BusinessAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="business_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2f631cda-46a4-4917-a849-f746542b0450" ChangeDateTime="06/03/2018 23:16:53">
+    <Property Name="ElementName" Value="[Spidey].[BusinessOrder].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[BusinessOrder]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="business_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="632c8846-6e1b-43d1-b916-d80dd0153855" ChangeDateTime="06/03/2018 23:21:21">
+    <Property Name="ElementName" Value="[Spidey].[CustomerOrder].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[CustomerOrder]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="customer_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ff79b884-3e2b-4d3c-8fb7-26a91c01ac99" ChangeDateTime="06/04/2018 01:44:33">
+    <Property Name="ElementName" Value="[Spidey].[Cities].[city_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[Cities]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[city_id]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0694d293-3c13-4bc5-8e58-d7907b1bd227" ChangeDateTime="06/04/2018 14:14:05">
+    <Property Name="ElementName" Value="[Spidey].[CustomerPhoneNumber].[phonenumber_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[CustomerPhoneNumber]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[phone_id]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="39358606-eb96-40be-8e75-91d5ac8288fc" ChangeDateTime="06/04/2018 15:01:38">
+    <Property Name="ElementName" Value="[Spidey].[BusinessPhoneNumber].[phonenumber_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Spidey].[BusinessPhoneNumber]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[phone_id]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="60236403-9d1e-42c1-a468-fa81d5d34ec0" ChangeDateTime="06/04/2018 15:03:10">
+    <Property Name="ElementName" Value="[Spidey].[Businesses]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="dbo" />
+    <Property Name="IsNewSchemaExternal" Value="True" />
+  </Operation>
+  <Operation Name="Move Schema" Key="a688722a-b0be-48d1-8d8f-e92c0012ea72" ChangeDateTime="06/04/2018 15:03:25">
+    <Property Name="ElementName" Value="[dbo].[Businesses]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Spidey" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+</Operations>
